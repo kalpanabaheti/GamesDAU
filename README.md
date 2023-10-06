@@ -12,6 +12,6 @@
 
 **5. *exceptionregioninference*:** Assuming a linear curve fit (which can be switched to other approaches such as case-wise Bayesian perturbation, or other forms of regression, etc.), inferring a model to explain the exception region.
 
-**6. *generalinference*:** Time-series based curve-fitting (exponential smoothing, to start with) on general trend of alert of regions per 60-day-runs across cohorts. This may also be used to extrapolate preliminary baseline for future data (predictive mode).
+**6. *generalinference*:** Time-series based curve-fitting (exponential smoothing, to start with) on general trend of major alert regions per 60-day-runs across cohorts. This may also be used to extrapolate preliminary baseline for future data (predictive mode).
 
 **7. *correlationDAU*:** Methods for assessing correlation between truncated previous summative DAU population and current cohort's Day 1 DAU.

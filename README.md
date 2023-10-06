@@ -6,7 +6,7 @@
 
 **2. *initialplotting*:** Methods for visualising the trends of multiple cohorts on a graph, and consequently visualising a full year of cohorts.
 
-**3. *timeseriesanalysis*:** Methods (fine-tuned personally) for accurately identifying all significant junctures of change in DAU across cohorts
+**3. *timeseriesanalysis*:** Methods developed for accurately identifying all significant junctures of change in DAU across cohorts
 
 **4. *exceptionregionanalysis*:** Methods for understanding regions of ambiguity better using summary statistics.
 

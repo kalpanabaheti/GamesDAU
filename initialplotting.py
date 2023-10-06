@@ -64,4 +64,70 @@ def heatmap(array, x1, x2, y1, y2)
     plt.figure(figsize = (10, 8))
     sns.heatmap(np0, cmap='hot')
     plt.show()
+
+# Sum of diagonal in a square matrix
+def diag_sum(sub_matrix):
+    
+    '''
+    2Dlist sub_matrix: Square matrix input
+    
+    Returns: sum of major diagonal - int
+    '''
+    
+    new_matrix = sub_matrix
+    sm = sum(np.diag(np.fliplr(new_matrix)))
+    
+    return sm
+
+# Finds daily summation of active players
+def windows(matrix, full_square_size):
+    
+    '''
+    int full_square_size: Cutoff after which sliding window of square matrices must be built
+    
+    Returns: List of summative daily active user count - int list
+    '''
+    
+    dau_sums = []
+    
+    for i in range(1, full_square_size+1):
+        
+        sub_matrix = matrix[0:i,0:i]
+        sm = diag_sum(sub_matrix)
+        dau_sums.append(sm)
+        
+    for i in range(full_square_size+1,matrix.shape[0]+1):
+        
+        sub_matrix = matrix[i-full_square_size:i,:]
+        sm = diag_sum(sub_matrix)
+        dau_sums.append(sm)
+        
+    return dau_sums
+
+
+# Plotting daily user count across the year with statistics
+def plot_array_as_bar_chart(arr):
+    
+    # Plotting bar chart
+    indices = np.arange(len(arr))
+    plt.figure(figsize=(10, 6))
+    plt.bar(indices, arr, color='pink')
+    plt.xlabel('Day of Year')
+    plt.ylabel('Total Gamers')
+    plt.title('Android Total Daily Players')
+    plt.show()
+    
+    # General statistics
+    mean = np.mean(arr)
+    median = np.median(arr)
+    std_dev = np.std(arr)
+    min_val = np.min(arr)
+    max_val = np.max(arr)
+
+    print(f"Mean: {mean}")
+    print(f"Median: {median}")
+    print(f"Standard Deviation: {std_dev}")
+    print(f"Minimum Value: {min_val}")
+    print(f"Maximum Value: {max_val}")
+
     

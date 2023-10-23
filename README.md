@@ -18,4 +18,4 @@
 
 ## Game Intelligence Official Report
 
-**Link: **https://docs.google.com/presentation/d/10Ujh1dya4eUI_rUDGwhAjOecFQU2nhaHd1oHLCULJXI/edit?usp=sharing
+**Link:** https://docs.google.com/presentation/d/10Ujh1dya4eUI_rUDGwhAjOecFQU2nhaHd1oHLCULJXI/edit?usp=sharing

@@ -15,3 +15,7 @@
 **6. *generalinference*:** Time-series based curve-fitting (exponential smoothing, to start with) on general trend of major alert regions per 60-day-runs across cohorts. This may also be used to extrapolate preliminary baseline for future data (predictive mode).
 
 **7. *correlationDAU*:** Methods for assessing correlation between truncated previous summative DAU population and current cohort's Day 1 DAU.
+
+## Game Intelligence Official Report
+
+**Link: **https://docs.google.com/presentation/d/10Ujh1dya4eUI_rUDGwhAjOecFQU2nhaHd1oHLCULJXI/edit?usp=sharing
